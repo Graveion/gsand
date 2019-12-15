@@ -2,9 +2,8 @@ package com.example.nbody.GravSim
 
 
 val G = 6.6726 * Math.pow(10.0, -11.0)
-//val G = 6.6726 * Math.pow(10.0, -20.0)
 
-const val theta = 0.80
+const val theta = 0.85
 
 fun pointDistance(A: Vector2d, B: Vector2d): Double {
     val xsquared: Double = (B.x - A.x) * (B.x - A.x)
