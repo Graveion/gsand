@@ -108,8 +108,10 @@ class MainActivity : AppCompatActivity() {
 
         //random between 800-830, 530-560, -0.55 -0.6, -0.79- 0.84
 
+        //random.nextDouble(5.96219, 5.98219)
+
         return Body(
-            5.97219E+24,
+            random.nextDouble(5.96219, 5.98219) * Math.pow(10.0, 24.0),
             Vector2d(
                 random.nextDouble(795.0, 835.0),
                 random.nextDouble(524.0, 566.0)
@@ -122,18 +124,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun generateCCW() : Body
     {
-
-        //random between 800-830, 530-560, -0.55 -0.6, -0.79- 0.84
-
         return Body(
-            5.97219E+24,
+            random.nextDouble(5.96219, 5.98219) * Math.pow(10.0, 24.0),
             Vector2d(
-                random.nextDouble(970.0, 1025.0),
+                random.nextDouble(988.0, 1033.0),
                 random.nextDouble(524.0, 566.0)
             ),
             Vector2d(
                 random.nextDouble(0.55, 0.65),
-                random.nextDouble(-0.84, -0.79)
+                random.nextDouble(-0.81, -0.73)
             ))
     }
 
