@@ -2,13 +2,10 @@ package com.example.nbody
 
 import android.content.Context
 import android.graphics.*
-import android.os.Build
 import android.view.MotionEvent
 import android.view.SurfaceHolder
 import android.view.SurfaceView
 import com.example.nbody.GravSim.Body
-import com.example.nbody.GravSim.Vector2d
-import kotlin.math.roundToInt
 
 class Display(context: Context) : SurfaceView(context), Runnable {
 

@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var display: Display
     val sceneObjects = ArrayList<Body>()
-    val bodies = 200
     lateinit var quadtree: BHTree
 
     var dpHeight = 0
@@ -103,8 +102,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun generateCW() : Body
-    {
+    private fun generateCW(): Body {
 
         //random between 800-830, 530-560, -0.55 -0.6, -0.79- 0.84
 
@@ -119,11 +117,11 @@ class MainActivity : AppCompatActivity() {
             Vector2d(
                 random.nextDouble(-0.6, -0.55),
                 random.nextDouble(-0.84, -0.79)
-            ))
+            )
+        )
     }
 
-    private fun generateCCW() : Body
-    {
+    private fun generateCCW(): Body {
         return Body(
             random.nextDouble(5.96219, 5.98219) * Math.pow(10.0, 24.0),
             Vector2d(
@@ -133,21 +131,7 @@ class MainActivity : AppCompatActivity() {
             Vector2d(
                 random.nextDouble(0.55, 0.65),
                 random.nextDouble(-0.81, -0.73)
-            ))
-    }
-
-    //Vector2d(1001.24, 546.0), Vector2d(0.59, -0.82))
-
-    private fun generateBodyAtRandomLocation(): Body {
-        return Body(
-            5.97219E+24,
-            Vector2d(
-                random.nextDouble(800.0, 1000.0),
-                random.nextDouble(400.0, 600.0)
-            ),
-            Vector2d(
-                random.nextDouble(-0.82, 0.82),
-                random.nextDouble(-0.82, 0.82)
-            ))
+            )
+        )
     }
 }
